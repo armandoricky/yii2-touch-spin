@@ -3,7 +3,7 @@
     "description": "A Yii2 input widget extension for manage lists with item and quantity.",
     "type": "yii2-widget",
     "keywords": ["yii2", "extension", "form", "widget", "spin", "spin management"],
-    "license": "MIT",
+    "license": "BSD 3-Clause",
     "minimum-stability": "stable",
     "authors": [
         {
@@ -18,7 +18,6 @@
     },
     "require": {
         "yiisoft/yii2": "^2.0.0",
-        "yiisoft/yii2-jui": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "^2.0.0"
     },
     "autoload": {
