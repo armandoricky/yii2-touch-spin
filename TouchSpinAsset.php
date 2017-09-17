@@ -2,9 +2,9 @@
 
 /**
  * @copyright Copyright &copy; 2017, Armando Ricardo Nogueira, w3bsistemas.com
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @license MIT
  * @package armrck\touchspin
- * @version 0.1.0
+ * @version 1.0.0.0
  */
 
 namespace armrck\touchspin;
@@ -12,9 +12,9 @@ namespace armrck\touchspin;
 /**
  * Asset bundle for Armrck Touch Spin widget. Includes assets from bootstrap plugin.
  *
- * @see http://github.com/armandoricky/armrck-touch-spin
+ * @see http://github.com/armandoricky/yii2-touch-spin
  * @author Armando Ricardo Nogueira <armandoricky@gmail.com>
- * @since 1.0
+ * @since 1.0.0.0
  */
 class TouchSpinAsset extends \yii\web\AssetBundle {
 

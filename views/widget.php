@@ -1,17 +1,22 @@
 <?php
+/**
+ * A Yii2 input widget extension for manage touch spin with fields item and item_qtd.
+ *
+ * @author ARMANDO RICARDO NOGUEIRA on 16/09/2017
+ * @package armrck\touchspin
+ */
 
 /**
  * @var \yii\db\ActiveRecord $model
- * @var \armrck\touchspin\TouchSpin $widget
- *
+ * @var \yii\db\ActiveRecord $items
  */
 ?>
 
 <div class="armrck-touchspin-list">
     <?php if (count($items) > 0) : ?>
         <?php
-        end($items); // move o ponteiro interno para o final do array 
-        $lastKey = key($items); // retorna o ultimo indice do array
+        end($items); // Move o ponteiro interno para o final do array 
+        $lastKey = key($items); // Retorna o ultimo indice do array
         ?>
         <?php foreach ($items as $k => $item) : ?>                        
             <div class="armrck-touchspin-entry" data-key="<?= $k; ?>">
