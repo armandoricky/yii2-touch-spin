@@ -1,5 +1,3 @@
-
-
 Yii2-TouchSpin
 ==============
 
@@ -35,8 +33,8 @@ Once the extension is installed, simply use it in your code by :
 <?= TouchSpin::widget([
         'model' => $model, 
         'collection' => 'expectativa', // Name for your collection (Array) POST
-        'attribute1' => 'item', // Attribute1 in your Model. E.g. name="Model[expectativa][0][item]"
-        'attribute2' => 'item_qtd_aluno', // Attribute2 in your Model. E.g. name="Model[expectativa][0][item_qtd_aluno]"
+        'attribute1' => 'item', // Attribute1 in your Model
+        'attribute2' => 'item_qtd_aluno', // Attribute2 in your Model
         'items' => ArrayHelper::toArray($model->alunoExpectativaItens), // Your Array
         'options' => [
             'class' => 'form-control'
