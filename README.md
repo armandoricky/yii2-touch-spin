@@ -3,9 +3,9 @@
 Yii2-TouchSpin
 ==============
 
-![example](https://raw.githubusercontent.com/armandoricky/armrck-touchspin/master/screenshot/armrck-touch-spin-example.JPG)
+![example](https://raw.githubusercontent.com/armandoricky/yii2-touch-spin/master/screenshot/armrck-touch-spin-example.JPG)
 
-A Yii2 input widget extension for manage lists with item and quantity.
+A Yii2 input widget extension for manage lists of input spinner with field text and field numeric.
 
 Installation
 ------------
@@ -34,10 +34,10 @@ Once the extension is installed, simply use it in your code by :
 ```php
 <?= TouchSpin::widget([
         'model' => $model, 
-        'attribute' => 'expectativa',
-        'name_field_1' => 'item', // E.g. name="Model[expectativa][0][item]"
-        'name_field_2' => 'item_qtd_aluno', // E.g. name="Model[expectativa][0][item_qtd_aluno]"
-        'items' => ArrayHelper::toArray($model->alunoExpectativaItens),
+        'collection' => 'expectativa', // Name for your collection (Array) POST
+        'attribute1' => 'item', // Attribute1 in your Model. E.g. name="Model[expectativa][0][item]"
+        'attribute2' => 'item_qtd_aluno', // Attribute2 in your Model. E.g. name="Model[expectativa][0][item_qtd_aluno]"
+        'items' => ArrayHelper::toArray($model->alunoExpectativaItens), // Your Array
         'options' => [
             'class' => 'form-control'
         ]

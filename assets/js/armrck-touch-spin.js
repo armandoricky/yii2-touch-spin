@@ -1,12 +1,10 @@
 /*
- * Componente TOUCHSPIN personalizado
- * (c) 2017 Armando Ricardo Nogueira - armandoricky@gmail.com
+ * Yii2 Touch Input Spin customizado
+ * @author Armando Ricardo Nogueira - armandoricky@gmail.com* 
  */
 
 /** 
- * ACRÉSCIMO DE VALOR [+]
- * Ref: armrck-touchspin UP
- * @author Armando Ricardo Nogueira - armandoricky@gmail.com
+ * ACRÉSCIMO [+]
  * @param {event} e
  * **/
 $(document).on('click', '.acrescimo', function (e) {
@@ -20,8 +18,7 @@ $(document).on('click', '.acrescimo', function (e) {
 });
 
 /** 
- * DECRÉSCIMO DE VALOR [-]
- * armrck-touchspin DOWN
+ * DECRÉSCIMO [-]
  * @param {event} e
  **/
 $(document).on('click', '.decrescimo', function (e) {
@@ -37,16 +34,37 @@ $(document).on('click', '.decrescimo', function (e) {
 
 /** 
  * ALTERAR PROPRIEDADES DOS BOTÕES E/OU REMOVER ENTRADAS DE CAMPO
- * armrck-touchspin CLONE ENTRY
- * @author Armando Ricardo Nogueira - armandoricky@gmail.com
+ * Ref: armrck-touchspin CLONE ENTRY
  * @param {event} e
  **/
 $(document).on('click', '.armrck-touchspin-add', function (e) {
     e.preventDefault();
-    var armTouchspinList = $('.armrck-touchspin-list'),
-            currentEntry = $(this).parents('.armrck-touchspin-entry:first'),
-            currentDataKey = $(this).parents('.armrck-touchspin-entry:first').data('key'),
-            newEntry = $(currentEntry.clone().attr('data-key', currentDataKey + 1)).appendTo('.armrck-touchspin-list');
+
+    // Posicionando no elemento pai do filho clicado
+    var currentEntry = $(this).parents('.armrck-touchspin-entry:first');
+    var currentDataKey = $(this).parents('.armrck-touchspin-entry:first').data('key');
+
+    // Pegando valores dos campos filhos
+    var firstInputValue = currentEntry.find('input:first').val();
+    var lastInputValue = currentEntry.find('input:last').val();
+
+    // Não permitir próximos scripts para adicionar (clonar)
+    if (!firstInputValue || !lastInputValue) {
+        if (typeof swal !== 'undefined' || typeof sweetAlert === "function") {
+            swal({
+                title: 'Opss!',
+                text: 'Preencha todos os campos',
+                type: 'warning',
+                timer: 3000
+            }).catch(swal.noop);
+        } else {
+            alert('Preencha todos os campos');
+        }
+        return false;
+    }
+
+    var armTouchspinList = $('.armrck-touchspin-list');
+    var newEntry = $(currentEntry.clone().attr('data-key', currentDataKey + 1)).appendTo('.armrck-touchspin-list');
 
     // Alterar attributo "name" de cada campo da nova entrada
     var firstInputName = newEntry.find('input:first').attr('name');

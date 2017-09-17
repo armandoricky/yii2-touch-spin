@@ -26,4 +26,10 @@
     width: 50px;
     text-align: center;
 }
-
+.armrck-touchspin-list .input-group-btn > input[type=number]::-webkit-inner-spin-button, 
+.armrck-touchspin-list .input-group-btn > input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    margin: 0 !important; 
+}

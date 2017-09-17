@@ -10,12 +10,13 @@ use armrck\touchspin\TouchSpinAsset;
  * @author ARMANDO RICARDO NOGUEIRA on 16/09/2017
  * @package armrck\touchspin
  */
-class TouchSpin extends \yii\widgets\InputWidget {
+class TouchSpin extends \yii\base\Widget {
 
+    public $model;
+    public $collection = 'collection';
+    public $attribute1 = 'item';
+    public $attribute2 = 'qtw';
     public $items = [];
-    public $attribute;
-    public $name_field_1 = 'item';
-    public $name_field_2 = 'item_qtd';
 
     /**
      * @var array Default options for the class HTML attributes
@@ -25,14 +26,7 @@ class TouchSpin extends \yii\widgets\InputWidget {
     ];
 
     public function init() {
-        if (!isset($this->options['id'])) {
-            $this->options['id'] = $this->getId();
-        }
-        if (!isset($this->options['class'])) {
-            $this->options['class'] = 'armrck-touchspin';
-        } else {
-            $this->options['class'] = 'armrck-touchspin ' . $this->options['class'];
-        }
+        $this->configHtmlOptions();
         $this->registerTouchSpinAsset();
         parent::init();
     }
@@ -41,12 +35,25 @@ class TouchSpin extends \yii\widgets\InputWidget {
         parent::run();
         return $this->render('widget', [
                     'model' => $this->model,
-                    'attribute' => $this->attribute,
-                    'name_field_1' => $this->name_field_1,
-                    'name_field_2' => $this->name_field_2,
-                    'items' => $this->items,
-                    'widget' => $this
+                    'collection' => $this->collection,
+                    'attribute1' => $this->attribute1,
+                    'attribute2' => $this->attribute2,
+                    'items' => $this->items
         ]);
+    }
+
+    /**
+     * Config Html Options 
+     */
+    public function configHtmlOptions() {
+        if (!isset($this->options['id'])) {
+            $this->options['id'] = $this->getId();
+        }
+        if (!isset($this->options['class'])) {
+            $this->options['class'] = 'armrck-touchspin';
+        } else {
+            $this->options['class'] = 'armrck-touchspin ' . $this->options['class'];
+        }
     }
 
     /**
