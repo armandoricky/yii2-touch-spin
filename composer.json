@@ -2,7 +2,7 @@
     "name": "armrck/yii2-touch-spin",
     "description": "A Yii2 input widget extension for manage lists of input spinner with field text and field numeric.",
     "type": "yii2-widget",
-    "keywords": ["yii2", "extension", "widget", "input spin", "spin", "input spin list", "", "form"],
+    "keywords": ["yii2", "extension", "widget", "input spin", "spin", "input spin list", "form"],
     "license": "BSD 3-Clause",
     "minimum-stability": "stable",
     "authors": [
