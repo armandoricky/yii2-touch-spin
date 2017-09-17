@@ -35,8 +35,8 @@ Once the extension is installed, simply use it in your code by :
 <?= TouchSpin::widget([
         'model' => $model, 
         'attribute' => 'expectativa',
-        'name_field_1' => 'item', // E.g. name="Model[expextativa][0][item]"
-        'name_field_2' => 'item_qtd_aluno', // E.g. name="Model[expextativa][0][item_qtd_aluno]"
+        'name_field_1' => 'item', // E.g. name="Model[expectativa][0][item]"
+        'name_field_2' => 'item_qtd_aluno', // E.g. name="Model[expectativa][0][item_qtd_aluno]"
         'items' => ArrayHelper::toArray($model->alunoExpectativaItens),
         'options' => [
             'class' => 'form-control'
