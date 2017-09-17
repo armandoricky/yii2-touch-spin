@@ -13,7 +13,6 @@ use armrck\touchspin\TouchSpinAsset;
 class TouchSpin extends \yii\base\Widget {
 
     public $model;
-    public $collection = 'collection';
     public $attribute1 = 'item';
     public $attribute2 = 'qtw';
     public $items = [];
@@ -35,7 +34,6 @@ class TouchSpin extends \yii\base\Widget {
         parent::run();
         return $this->render('widget', [
                     'model' => $this->model,
-                    'collection' => $this->collection,
                     'attribute1' => $this->attribute1,
                     'attribute2' => $this->attribute2,
                     'items' => $this->items
