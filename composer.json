@@ -4,6 +4,7 @@
     "type": "yii2-widget",
     "keywords": ["yii2", "extension", "form", "widget", "spin", "spin management"],
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Armando Ricardo",
@@ -22,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "armrck\\yii2-touchspin\\": ""
+            "armrck\\touchspin\\" : ""
         }
     }
 }
