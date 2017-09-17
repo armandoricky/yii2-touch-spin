@@ -39,7 +39,6 @@ class TouchSpin extends \yii\widgets\InputWidget {
 
     public function run() {
         parent::run();
-        \yii\helpers\VarDumper::dump($this->items, 10, true);
         return $this->render('widget', [
                     'model' => $this->model,
                     'attribute' => $this->attribute,
