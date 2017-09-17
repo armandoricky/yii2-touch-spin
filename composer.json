@@ -1,0 +1,28 @@
+{
+    "name": "armrck/yii2-touch-spin",
+    "description": "A Yii2 input widget extension for manage lists with item and quantity.",
+    "type": "yii2-widget",
+    "keywords": ["yii2", "extension", "form", "widget", "spin", "spin management"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Armando Ricardo",
+            "email": "armandoricky@gmail.com",
+            "homepage": "http://w3bsistemas.com/",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/armandoricky/yii2-touch-spin"
+    },
+    "require": {
+        "yiisoft/yii2": "^2.0.0",
+        "yiisoft/yii2-jui": ">=2.0.6",
+        "yiisoft/yii2-bootstrap": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "armrck\\yii2-touchspin\\": ""
+        }
+    }
+}
