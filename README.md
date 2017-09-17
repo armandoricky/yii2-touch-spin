@@ -3,7 +3,7 @@
 Yii2-TouchSpin
 ==============
 
-![example](https://camo.githubusercontent.com/b97f8e13dc689c9051d5c2bd4952e100de8efda3/68747470733a2f2f7333312e706f7374696d672e6f72672f68753367363664616a2f6c697374696e7075742e6a7067)
+![example](https://raw.githubusercontent.com/armandoricky/armrck-touchspin/master/screenshot/armrck-touch-spin-example.JPG)
 
 A Yii2 input widget extension for manage lists with item and quantity.
 
