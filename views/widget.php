@@ -46,7 +46,7 @@ use yii\bootstrap\Html;
                 <?php echo Html::activeInput('text', $model, $attribute1 . "[]", ['value' => '', 'class' => 'form-control']) ?> 
                 <span class="input-group-btn">
                     <button class="btn btn-default decrescimo" type="button"><i class="fa fa-backward"></i></button>
-                    <?php echo Html::activeInput('text', $model, $attribute2 . "[]", ['value' => '', 'class' => 'input-spin']) ?> 
+                    <?php echo Html::activeInput('text', $model, $attribute2 . "[]", ['value' => '', 'class' => 'form-control input-spin']) ?> 
                     <button class="btn btn-default acrescimo" type="button"><i class="fa fa-forward"></i></button>
                     <button class="btn btn-success armrck-touchspin-add" type="button"><i class="fa fa-plus"></i> Campo</button>
                 </span>
