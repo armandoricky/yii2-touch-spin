@@ -55,7 +55,8 @@ $(document).on('click', '.armrck-touchspin-add', function (e) {
                 title: 'Opss!',
                 text: 'Preencha todos os campos',
                 type: 'warning',
-                timer: 3000
+                timer: 3000,
+                useRejections: false
             });
         } else {
             alert('Preencha todos os campos');
