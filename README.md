@@ -34,10 +34,7 @@ Once the extension is installed, simply use it in your code by :
         'model' => $model, 
         'attribute1' => 'item', // Attribute 1 in your Model
         'attribute2' => 'item_qtd_aluno', // Attribute 2 in your Model
-        'items' => ArrayHelper::toArray($model->alunoExpectativaItens), // Array
-        'options' => [
-            'class' => 'form-control'
-        ]
+        'items' => ArrayHelper::toArray($model->alunoExpectativaItens) // Array
     ]);
 ?>
 ```
