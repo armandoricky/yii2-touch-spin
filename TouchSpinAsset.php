@@ -26,8 +26,8 @@ class TouchSpinAsset extends \yii\web\AssetBundle {
     ];
 
     public function init() {
-        $this->css[] = YII_DEBUG ? 'css/armrck-touch-spin.css' : 'css/armrck-touch-spin.min.css';
-        $this->js[] = YII_DEBUG ? 'js/armrck-touch-spin.js' : 'js/armrck-touch-spin.min.js';
+        $this->css = [YII_DEBUG ? 'css/armrck-touch-spin.css' : 'css/armrck-touch-spin.min.css'];
+        $this->js = [YII_DEBUG ? 'js/armrck-touch-spin.js' : 'js/armrck-touch-spin.min.js'];
     }
 
 }

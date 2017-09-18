@@ -1,6 +1,6 @@
 /*
  * Yii2 Touch Input Spin customizado
- * @author Armando Ricardo Nogueira - armandoricky@gmail.com* 
+ * @author Armando Ricardo Nogueira - armandoricky@gmail.com 
  */
 
 /** 
@@ -56,7 +56,7 @@ $(document).on('click', '.armrck-touchspin-add', function (e) {
                 text: 'Preencha todos os campos',
                 type: 'warning',
                 timer: 3000
-            }).catch(swal.noop);
+            });
         } else {
             alert('Preencha todos os campos');
         }
