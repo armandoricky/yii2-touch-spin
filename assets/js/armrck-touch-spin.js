@@ -88,8 +88,8 @@ $(document).on('click', '.armrck-touchspin-add', function (e) {
             .removeClass('btn-success').addClass('btn-danger')
             .html('<i class="fa fa-minus" aria-hidden="true"></i> Campo');
 
-    // Posicionar cursor dentro do novo campo
-    newEntry.find('input:last').focus();
+    // Posicionar cursor dentro do primeiro novo campo
+    newEntry.find('input:first').focus();
 }).on('click', '.armrck-touchspin-remove', function (e) {
     // Remover item
     $(this).parents('.armrck-touchspin-entry:first').remove();

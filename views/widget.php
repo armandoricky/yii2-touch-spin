@@ -35,7 +35,7 @@ use yii\bootstrap\Html;
                         <button class="btn btn-default decrescimo" type="button" tabindex="-1"><i class="fa fa-backward"></i></button>
                         <?php echo Html::activeInput('number', $model, $attribute2 . "[]", ['value' => $item[$attribute2], 'class' => 'form-control input-spin']) ?> 
                         <button class="btn btn-default acrescimo" type="button" tabindex="-1"><i class="fa fa-forward"></i></button>
-                        <button class="<?= $btn_action_class; ?>" type="button" tabindex="-1"><i class="<?= $btn_action_icon; ?>"></i> Campo</button>
+                        <button class="<?= $btn_action_class; ?>" type="button"><i class="<?= $btn_action_icon; ?>"></i> Campo</button>
                     </span>
                 </div>
             </div>
@@ -45,9 +45,9 @@ use yii\bootstrap\Html;
             <div class="input-group">
                 <?php echo Html::activeInput('text', $model, $attribute1 . "[]", ['value' => '', 'class' => 'form-control']) ?> 
                 <span class="input-group-btn">
-                    <button class="btn btn-default decrescimo" type="button"><i class="fa fa-backward"></i></button>
+                    <button class="btn btn-default decrescimo" type="button" tabindex="-1"><i class="fa fa-backward"></i></button>
                     <?php echo Html::activeInput('text', $model, $attribute2 . "[]", ['value' => '', 'class' => 'form-control input-spin']) ?> 
-                    <button class="btn btn-default acrescimo" type="button"><i class="fa fa-forward"></i></button>
+                    <button class="btn btn-default acrescimo" type="button" tabindex="-1"><i class="fa fa-forward"></i></button>
                     <button class="btn btn-success armrck-touchspin-add" type="button"><i class="fa fa-plus"></i> Campo</button>
                 </span>
             </div>

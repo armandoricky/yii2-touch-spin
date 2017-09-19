@@ -11,6 +11,8 @@
     vertical-align: middle;
     float: none;
     margin-left: -1px;
+    padding: 6px 0;
+    text-align: center;
 }
 .armrck-touchspin-list .input-group-btn > input[type=number]::-webkit-inner-spin-button, 
 .armrck-touchspin-list .input-group-btn > input[type=number]::-webkit-outer-spin-button { 
