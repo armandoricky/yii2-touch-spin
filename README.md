@@ -1,7 +1,7 @@
 Yii2-TouchSpin
 ==============
 
-![example](https://raw.githubusercontent.com/armandoricky/yii2-touch-spin/master/screenshot/armrck-touch-spin-example.JPG)
+![example](https://w3bsistemas.com/shared/yii2-touch-spin/armrck-touch-spin-demo.gif)
 
 A Yii2 input widget extension for manage lists of input spinner with field text and field numeric.
 
